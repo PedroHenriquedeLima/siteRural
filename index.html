@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portal Rural Tech</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav id="navbar">
+      <!-- Logo -->
+
+      <img id="navbrand" src="./img/logo.svg" alt="Logo do portal Rural Tech" />
+
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+      <div id="menu-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <ul class="navlinks">
+            <li><a href="#sobre" class="navlink">Sobre Nós</a></li>
+            <li><a href="#apps" class="navlink">Aplicativos</a></li>
+            <li><a href="#tecnicas" class="navlink">Técnicas de Cultivo</a></li>
+            <li><a href="#tutoriais" class="navlink">Tutoriais</a></li>
+            <li><a href="#recursos" class="navlink">Recursos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção sobre nós -->
+
+    <section id="sobre">
+      <div id="sobre-inner">
+        <h1>Bem vindo ao Rural Tech</h1>
+        <p>
+          No Rural Tech, acreditamos que a inovação tecnológica pode transformar
+          o campo e promover um futuro sustentável e eficiente para a
+          agricultura e pecuária. Nosso portal traz indicações de aplicativos,
+          técnicas de cultivo e cursos online para beneficiar o produtor. Criado
+          por alunos do 3º ano colegial, apaixonados por tecnologia e
+          agricultura.
+        </p>
+        <a href="#apps" id="btn-see-more">Veja Mais</a>
+      </div>
+    </section>
+
+    <!-- Aplicativos -->
+
+    <section id="apps">
+      <h2>Aplicativos</h2>
+
+      <div id="container-apps">
+        <div class="app">
+          <img
+            src="./img/app1.png"
+            alt="Aplicativo Custo Fácil"
+            class="app-image"
+          />
+          <div class="app-description">
+            <p>
+              O <span>Custo Fácil</span> da Embrapa, permite o controle
+              detalhado de despesas e receitas, facilitando a gestão financeira
+              no campo.
+            </p>
+            <a
+              href="https://play.google.com/store/apps/details?id=br.embrapa.custofacil&pcampaignid=web_share"
+              >Custo Fácil</a
+            >
+          </div>
+        </div>
+        <div class="app">
+          <img
+            src="./img/app2.png"
+            alt="Aplicativo Custo Fácil"
+            class="app-image"
+          />
+
+          <div class="app-description">
+            <p>
+              O <span>JetBov</span>, simplifica a gestão de rebanhos bovinos,
+              oferecendo controle completo de dados e atividades do gado.
+            </p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ionicframework.jetbovapp459755&pcampaignid=web_share"
+              >Jetbov</a
+            >
+          </div>
+        </div>
+
+        <div class="app">
+          <img
+            src="./img/app3.png"
+            alt="Aplicativo Custo Fácil"
+            class="app-image"
+          />
+
+          <div class="app-description">
+            <p>
+              O <span>Semper Leite</span> facilita a gestão de propriedades
+              leiteiras, com o controle detalhado da produção, saúde e
+              alimentação do rebanho.
+            </p>
+            <a
+              href="https://play.google.com/store/apps/details?id=br.com.pecuariabrasilassessoria.semper.leite&pcampaignid=web_share"
+              >Semper Leite</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnicas">
+      <h2>Técnicas de Cultivo</h2>
+
+      <div id="container-tecnicas">
+        <div class="tecnica">
+          <h3>Irrigação por gotejamento</h3>
+          <img
+            src="./img/tecnica1.png"
+            alt="Técnica de Irrigação por gotejamento"
+          />
+          <button class="btn-see-about" id="irrigacao">Veja Sobre</button>
+          <div class="details" id="detail-irrigacao">
+            <button
+              id="close-detail-irrigacao"
+              aria-label="Toggle navigation"
+              class="close-detail-btn"
+            >
+              Fechar
+            </button>
+            <div class="detail-content">
+              <h4>O que é a Irrigação por Gotejamento?</h4>
+              <p>
+                A irrigação por gotejamento é um método de irrigação eficiente
+                que entrega água diretamente às raízes das plantas por meio de
+                uma rede de tubulações, válvulas, canos e emissores. Essa
+                técnica é altamente eficiente no uso de água, reduzindo a
+                evaporação e a perda por escoamento.
+              </p>
+              <h4>Vantagens</h4>
+              <ul>
+                <li>Economia de água e energia.</li>
+                <li>Maior controle sobre a quantidade de água fornecida.</li>
+                <li>
+                  Redução de doenças nas plantas, pois mantém a umidade do solo
+                  e não das folhas.
+                </li>
+                <li>Facilita a aplicação de fertilizantes e nutrientes.</li>
+              </ul>
+              <h4>Aplicações</h4>
+              <p>
+                A irrigação por gotejamento é amplamente utilizada em hortas,
+                pomares e na agricultura de precisão. É ideal para áreas com
+                escassez de água ou onde a água é um recurso caro.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tecnica">
+          <h3>Consórcios de Culturas</h3>
+          <img
+            src="./img/tecnica2.png"
+            alt="Técnica de Irrigação por gotejamento"
+          />
+          <button class="btn-see-about" id="consorcio">Veja Sobre</button>
+          <div class="details" id="detail-consorcio">
+            <button
+              id="close-detail-consorcio"
+              aria-label="Toggle navigation"
+              class="close-detail-btn"
+            >
+              Fechar
+            </button>
+            <div class="detail-content">
+              <h4>O que são Consórcios de Culturas?</h4>
+              <p>
+                Consórcios de culturas referem-se à prática agrícola de cultivar
+                duas ou mais espécies de plantas na mesma área simultaneamente.
+                Essa técnica visa aumentar a produtividade, melhorar o uso dos
+                recursos e diversificar a produção.
+              </p>
+              <h4>Vantagens</h4>
+              <ul>
+                <li>Melhoria da saúde do solo e aumento da fertilidade.</li>
+                <li>Controle natural de pragas e doenças.</li>
+                <li>Melhor aproveitamento da luz solar, água e nutrientes.</li>
+                <li>
+                  Diversificação da produção, o que pode aumentar a renda do
+                  agricultor.
+                </li>
+              </ul>
+              <h4>Exemplos Comuns</h4>
+              <p>
+                Um exemplo clássico de consórcio é o cultivo de milho, feijão e
+                abóbora juntos, onde cada planta beneficia as outras em termos
+                de nutrientes e proteção.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tecnica">
+          <h3>AgroFloresta</h3>
+          <img src="./img/tecnica3.png" alt="Técnica de AgroFloresta" />
+          <button class="btn-see-about" id="agrofloresta">Veja Sobre</button>
+          <div class="details" id="detail-agrofloresta">
+            <button
+              id="close-detail-agrofloresta"
+              aria-label="Toggle navigation"
+              class="close-detail-btn"
+            >
+              Fechar
+            </button>
+            <div class="detail-content">
+              <h4>O que é AgroFloresta?</h4>
+              <p>
+                A AgroFloresta é um sistema de uso da terra que integra árvores,
+                arbustos, culturas agrícolas e, às vezes, gado em uma área,
+                promovendo a biodiversidade e a sustentabilidade. Esse método
+                busca imitar os ecossistemas naturais, combinando a produção
+                agrícola com a conservação ambiental.
+              </p>
+              <h4>Benefícios</h4>
+              <ul>
+                <li>
+                  Melhoria da fertilidade do solo através da reciclagem de
+                  nutrientes.
+                </li>
+                <li>
+                  Redução da erosão do solo e aumento da retenção de água.
+                </li>
+                <li>
+                  Maior resiliência contra pragas e doenças devido à diversidade
+                  de espécies.
+                </li>
+                <li>
+                  Produção de alimentos, madeira e outros produtos de forma
+                  sustentável.
+                </li>
+              </ul>
+              <h4>Práticas Comuns</h4>
+              <p>
+                As práticas de AgroFloresta incluem o cultivo de culturas
+                alimentares entre fileiras de árvores, o uso de plantas de
+                cobertura para proteger o solo, e a integração de animais para
+                controlar ervas daninhas e fertilizar naturalmente o solo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutoriais">
+      <h2>Tutoriais</h2>
+
+      <div id="container-tutoriais">
+        <div class="tutorial">
+          <h3>Irrigação por gotejamento</h3>
+          <iframe
+            width="280"
+            height="250"
+            src="https://www.youtube.com/embed/6lWi8YHcI6I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="border-radius: 5px"
+          >
+          </iframe>
+        </div>
+
+        <div class="tutorial">
+          <h3>Consórcio de Culturas</h3>
+          <iframe
+            width="280"
+            height="250"
+            src="https://www.youtube.com/embed/RElWyk7DoTI?si=t7F_6aIyF7q3m0tt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="border-radius: 5px"
+          ></iframe>
+        </div>
+
+        <div class="tutorial">
+          <h3>AgroFloresta</h3>
+          <iframe
+            width="280"
+            height="250"
+            src="https://www.youtube.com/embed/fdxPs0-gx2k?si=sGUzQegNOVY2qAO6"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="border-radius: 5px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos">
+      <h2>Recursos</h2>
+
+      <div id="container-recursos">
+        <div class="recurso">
+          <h3>Artigos Uteis</h3>
+          <img src="./img/recurso-pdf.jpg" alt="" class="recurso-img" />
+          <a
+            href="https://www.jb.com.br/economia/agropecuaria"
+            target="_blank"
+            class="see-recurso"
+            >Acessar</a
+          >
+        </div>
+
+        <div class="recurso">
+          <h3>Cursos da Embrapa</h3>
+          <img src="./img/recurso-cursos.jpg" alt="" class="recurso-img" />
+          <a
+            href="https://e-campo.sede.embrapa.br/"
+            target="_blank"
+            class="see-recurso"
+            >Acessar</a
+          >
+        </div>
+
+        <div class="recurso">
+          <h3>Curso de Excel</h3>
+          <img src="./img/recurso-planilhas.jpg" alt="" class="recurso-img" />
+          <a
+            href="https://ead.senar.org.br/cursos/excel-basico?gad_source=1&gclid=Cj0KCQjw5ea1BhC6ARIsAEOG5pye1OL1oQN2ts8Sp5P12TLF9oioOVKmSv2mNTmCabi_QihFMppn-ywaAmyYEALw_wcB"
+            target="_blank"
+            class="see-recurso"
+            >Acessar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sobre</h3>
+          <p>
+            O Rural Tech é um portal dedicado à inovação no setor rural.
+            Oferecemos informações sobre aplicativos, técnicas de cultivo e
+            tutoriais para ajudar os produtores a aproveitarem ao máximo a
+            tecnologia no campo.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Rural Tech. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

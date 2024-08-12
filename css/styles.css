@@ -1,0 +1,551 @@
+/* Estilos gerais */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+/* Estilos padrão */
+
+#navbar {
+  height: 96px;
+  background-color: #0a4032;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbrand {
+  height: 100%;
+  margin: auto 40px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  margin: auto 40px;
+}
+
+.navlink {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #f25e22;
+}
+
+.close {
+  display: none;
+}
+
+#sobre,
+#apps,
+#tecnicas,
+#tutoriais,
+#recursos {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#sobre {
+  background-image: url("../img/sobre.jpg");
+}
+
+#sobre-inner {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 110, 59, 0.9);
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#sobre-inner h1 {
+  margin-top: 20px;
+}
+
+#sobre-inner p {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+#sobre #btn-see-more {
+  width: 300px;
+  height: 64px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f25e22;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#apps {
+  background-color: #018c4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 40px;
+}
+
+#apps h2 {
+  margin-top: 0px;
+}
+
+#container-apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.app-description {
+  height: 250px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-description a {
+  display: block;
+  margin-top: 2px;
+  text-align: center;
+  background-color: #f25e22;
+  width: 140px;
+  padding: 8px 0px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.app-description a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.app-description p {
+  text-align: start;
+  font-size: 16px;
+  margin: 5px;
+  background-color: rgba(0, 110, 59, 0.9);
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.app-description p span {
+  background-color: #f25e22;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+#tecnicas {
+  background-color: #f25e22;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+#tecnicas h2 {
+  margin-top: 0px;
+}
+
+#container-tecnicas {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.tecnica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #0a4032;
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.tecnica h3 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.tecnica img {
+  margin-bottom: 20px;
+}
+
+.btn-see-about {
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f25e22;
+  border: none;
+}
+
+.btn-see-about:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.details {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 340px;
+  height: 350px;
+  z-index: 10;
+  background-color: #018c4b;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: start;
+}
+
+.close-detail-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  float: top;
+  cursor: pointer;
+  background-color: #f25e22;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.detail-content {
+  max-height: 330px; /* Subtrai o espaço do botão de fechar */
+  overflow-y: auto;
+}
+
+#tutoriais {
+  background-color: #018c4b;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+#tutoriais h2 {
+  margin-top: 0px;
+}
+
+#container-tutoriais {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #0a4032;
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#recursos {
+  background-color: #f25e22;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+#recursos h2 {
+  margin-top: 0px;
+}
+
+.recurso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #0a4032;
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#container-recursos {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.recurso h3 {
+  margin: 10px auto;
+}
+
+.recurso-img {
+  width: 300px;
+  height: 240px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.see-recurso {
+  text-align: center;
+  align-content: center;
+  background-color: #018c4b;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #0a4032;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: start;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+/* Estilos mobile */
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+  }
+
+  #navbar {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navbrand {
+    height: 100%;
+    margin: auto 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: auto 20px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #0a4032;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+    color: white;
+  }
+
+  .close {
+    display: block;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navlinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navlink {
+    margin: 10px 0;
+  }
+
+  .navlink a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navlink a:hover {
+    color: #f25e22;
+    text-decoration: solid;
+    border-radius: 5px;
+  }
+
+  #sobre #btn-see-more {
+    width: 200px;
+    height: 48px;
+    font-size: 18px;
+  }
+  #sobre,
+  #apps,
+  #tecnicas,
+  #tutoriais,
+  #recursos {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #sobre-inner {
+    height: 90%;
+    width: 95%;
+  }
+
+  #apps {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #tecnicas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  #container-tecnicas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+
+  #tutoriais {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  #container-tutoriais {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+
+  #recursos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  #container-recursos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+}
